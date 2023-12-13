@@ -23,8 +23,10 @@ function recursiveNestedLook($grp){
             recursiveNestedLook($_.DisplayName) 
         }else{
             # It's a user but check it for good measures ...
-            if( $_.OdataType -eq "#microsoft.graph.user"){
-                Write-Host "Adding user", $_.DisplayName, "to group $dstGrp ..."
+            if( $_.OdataType -eq "#microsoft.graph.user"){ 
+                (Get-AzADUser -DisplayName "$($_.DisplayName)").UserPrincipalName
+                # Uncomment if you want to run :
+                #Write-Host "Adding user", $_.DisplayName , "to group $dstGrp ..."
                 #Add-AzADGroupMember -TargetGroupDisplayName $dstGrp -MemberObjectId $_.id
             } 
         }
