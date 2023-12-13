@@ -33,4 +33,4 @@ function recursiveNestedLook($grp){
     }
 }
 
-recursiveNestedLook $srcGrp 
+recursiveNestedLook $srcGrp $dstGrp
