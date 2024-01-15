@@ -1,7 +1,7 @@
 ﻿<###
     Azure List all RBAC permissions of every resource contained in each subscription of the tenant
     License: MIT
-    Author : EL HANCHI Othmane - Deepdef 2023
+    Author: EL HANCHI Othmane - Deepdef 2023 
     Created : 12/21/2023
 ###>
 
