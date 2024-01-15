@@ -8,8 +8,6 @@
 
 Connect-AzAccount
 
-#Select-Object -Property * 
-#Export-Csv -Path ".\export.csv" -NoTypeInformation
 
 $roleMap = @{}
 
