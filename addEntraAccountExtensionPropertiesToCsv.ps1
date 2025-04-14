@@ -38,6 +38,3 @@ $csv | %{
 }
 
 $csv | Export-Csv -NoTypeInformation -Path "C:\Users\OthmaneELHANCHI\Downloads\BRP_Entra_Accounts_20250414_1950.csv"
-
-#$usr = Get-AzureADUser -Object "stephaneforte@bredinprat.com"
-#$usr | fl -Property *
